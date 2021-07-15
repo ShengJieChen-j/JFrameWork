@@ -14,7 +14,7 @@
 #include <stdint.h>
 
 namespace base
-{
+{//todo 实现
 	bool	initLog(const char* szLogPath, const char* szPrefixName);
 	void	uninitLog();
 	void	saveLog(const char* szSection, bool bConsole, const char* szFormat, ...);

@@ -17,22 +17,22 @@ namespace base{
 
 template <
 		 typename T,              // 内存分配的类型
-         size_t blocksPerBatch    // 每次开辟多少个T内存空间
+         size_t blocksPerBatch    // 每次开辟多少个T类型的内存空间
          >
 
-class SimpleAllocator
+class CSimpleAllocator
 {
 public:
 	typedef std::vector<T*> TVector;
 	typedef std::vector<unsigned char*> ByteVector;
 
 public:
-	SimpleAllocator(): nextAllocation(0) {
+	CSimpleAllocator(): nextAllocation(0) {
 	}
 
-	~SimpleAllocator();
+	~CSimpleAllocator();
 
-	// 申请一个T大小的内存空间
+	// 申请一个T类型大小的内存空间
 	T* allocateBlock();
 	// 释放
 	void releaseBlock(T *pBlock);
@@ -47,7 +47,7 @@ private:
 };
 
 template <typename T, size_t blocksPerBatch>
-SimpleAllocator<T, blocksPerBatch>::~SimpleAllocator() {
+CSimpleAllocator<T, blocksPerBatch>::~CSimpleAllocator() {
 	//return;
 	size_t iNum = batchVector.size();
 	for (size_t i = 0; i < iNum; ++i) {
@@ -57,14 +57,14 @@ SimpleAllocator<T, blocksPerBatch>::~SimpleAllocator() {
 }
 
 template <typename T, size_t blocksPerBatch>
-void SimpleAllocator<T, blocksPerBatch>::releaseBlock(T *pBlock) {
+void CSimpleAllocator<T, blocksPerBatch>::releaseBlock(T *pBlock) {
 	if (pBlock) {
 		objectVector[--nextAllocation] = pBlock;
 	}		
 }
 
 template <typename T, size_t blocksPerBatch>
-T* SimpleAllocator<T, blocksPerBatch>::allocateBlock() {
+T* CSimpleAllocator<T, blocksPerBatch>::allocateBlock() {
 	if (nextAllocation >= objectVector.size()) {
 		size_t st_bpb = 0 == blocksPerBatch ? 1 : blocksPerBatch;
 		size_t size = sizeof(T) * st_bpb;
