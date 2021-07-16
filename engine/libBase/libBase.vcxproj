@@ -90,10 +90,22 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../thirdparty/boost/include/boost;../../thirdparty/boost/include/;../../include/libBase;./;../../thirdparty/curl/include;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <OutputFile>$(OutDir)libbase-md-gd.lib</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalDependencies>libcurl-md-gd.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>../../thirdparty/boost/lib/x64/debug/lib;../../thirdparty/curl/lib/x64/debug;</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -125,12 +137,13 @@
     <ClInclude Include="..\..\include\libBase\Base.h" />
     <ClInclude Include="..\..\include\libBase\logger.h" />
     <ClInclude Include="..\..\include\libBase\SimpleAllocator.h" />
-    <ClInclude Include="..\..\include\libBase\Time.h" />
+    <ClInclude Include="..\..\include\libBase\Timer.h" />
     <ClInclude Include="..\..\include\libBase\TypeDefine.h" />
     <ClInclude Include="..\..\include\libBase\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Time.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

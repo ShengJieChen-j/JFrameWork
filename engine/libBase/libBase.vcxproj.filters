@@ -18,18 +18,21 @@
     <ClInclude Include="..\..\include\libBase\SimpleAllocator.h">
       <Filter>inc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\libBase\Time.h">
-      <Filter>inc</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\include\libBase\TypeDefine.h">
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\libBase\Vector2.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libBase\Timer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Time.cpp">
+    <ClCompile Include="stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
