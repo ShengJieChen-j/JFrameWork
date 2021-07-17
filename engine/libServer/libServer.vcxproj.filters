@@ -18,6 +18,9 @@
     <ClInclude Include="targetver.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ISubject.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BandwidthMgr.cpp">
