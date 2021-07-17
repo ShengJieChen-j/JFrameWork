@@ -27,6 +27,21 @@
     <ClInclude Include="..\..\include\libBase\Timer.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libBase\ExceptionHandler.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\basecrt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\IStream.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\OStream.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\TimeTools.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -36,6 +51,15 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\logger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\basecrt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExceptionHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeTools.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

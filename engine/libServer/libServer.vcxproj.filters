@@ -7,6 +7,12 @@
     <Filter Include="src">
       <UniqueIdentifier>{1d1f4c83-4c19-47e0-8cec-47c2169ed825}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\net">
+      <UniqueIdentifier>{0cba01ac-e470-4121-bcef-26e1fecf67c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\db">
+      <UniqueIdentifier>{b7ff17fe-4e52-4e23-b869-9e1b52437982}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\libServer\BandwidthMgr.h">
@@ -19,7 +25,13 @@
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\libServer\ISubject.h">
-      <Filter>inc</Filter>
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IObserver.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IMsg.h">
+      <Filter>inc\net</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
