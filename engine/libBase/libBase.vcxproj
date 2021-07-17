@@ -142,6 +142,7 @@
     <ClInclude Include="..\..\include\libBase\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\logger.cpp" />
     <ClCompile Include="src\Timer.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

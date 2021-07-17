@@ -12,9 +12,18 @@
     <ClInclude Include="..\..\include\libServer\BandwidthMgr.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BandwidthMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
