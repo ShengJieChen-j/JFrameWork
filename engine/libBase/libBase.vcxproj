@@ -81,6 +81,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../thirdparty/boost/include/boost;../../thirdparty/boost/include/;../../include/libBase;./;../../thirdparty/curl/include;../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader />
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
