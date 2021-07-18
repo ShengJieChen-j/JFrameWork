@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include "logger.h"
+#include "Thread.h"
+#include "ExceptionHandler.h"
 #include <Mmsystem.h>
 #include <stdio.h>
 #include <time.h>
