@@ -76,6 +76,7 @@
     <TargetName>libbase-md-gd</TargetName>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>../../lib/x64/debug/</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -143,6 +144,8 @@
     <ClInclude Include="..\..\include\libBase\logger.h" />
     <ClInclude Include="..\..\include\libBase\OStream.h" />
     <ClInclude Include="..\..\include\libBase\SimpleAllocator.h" />
+    <ClInclude Include="..\..\include\libBase\SyncObjs.h" />
+    <ClInclude Include="..\..\include\libBase\Thread.h" />
     <ClInclude Include="..\..\include\libBase\Timer.h" />
     <ClInclude Include="..\..\include\libBase\TimeTools.h" />
     <ClInclude Include="..\..\include\libBase\TypeDefine.h" />
@@ -152,6 +155,7 @@
     <ClCompile Include="src\basecrt.cpp" />
     <ClCompile Include="src\ExceptionHandler.cpp" />
     <ClCompile Include="src\logger.cpp" />
+    <ClCompile Include="src\Thread.cpp" />
     <ClCompile Include="src\Timer.cpp" />
     <ClCompile Include="src\TimeTools.cpp" />
     <ClCompile Include="stdafx.cpp" />

@@ -14,7 +14,7 @@
 #include "libBase/TypeDefine.h"
 
 namespace server
-{//todo 实现
+{
 	class CBandwidthMgr
 	{
 		//流量数据

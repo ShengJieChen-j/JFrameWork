@@ -8,7 +8,7 @@
     概    述：  支持win,linux平台。    
 
 *******************************************************************/
-#pargma once
+#pragma once
 #include <stdio.h>
 #include <assert.h>
 #include <stdint.h>
