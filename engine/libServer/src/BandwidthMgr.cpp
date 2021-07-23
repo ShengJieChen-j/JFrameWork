@@ -18,8 +18,8 @@ namespace server
 
 	void CBandwidthMgr::output()
 	{
-		std::hash_map<uint16_t, SNetData>::iterator itor = m_map_Bandwidth.begin();
-		std::hash_map<uint16_t, SNetData>::iterator itore = m_map_Bandwidth.end();
+		std::unordered_map<uint16_t, SNetData>::iterator itor = m_map_Bandwidth.begin();
+		std::unordered_map<uint16_t, SNetData>::iterator itore = m_map_Bandwidth.end();
 
 		for (; itor != itore; ++itor)
 		{
