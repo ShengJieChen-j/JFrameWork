@@ -39,6 +39,12 @@
     <ClInclude Include="..\..\include\libServer\Profiling.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libServer\Ticker.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\TickerMgr.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BandwidthMgr.cpp">
@@ -51,6 +57,13 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Profiling.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\libServer\Ticker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\libServer\TickerMgr.cpp" />
+    <ClCompile Include="src\TickerMgr.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
