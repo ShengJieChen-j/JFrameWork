@@ -34,7 +34,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -133,11 +133,15 @@
     <ClInclude Include="..\..\include\libServer\IMsg.h" />
     <ClInclude Include="..\..\include\libServer\IObserver.h" />
     <ClInclude Include="..\..\include\libServer\ISubject.h" />
+    <ClInclude Include="..\..\include\libServer\Profiling.h" />
+    <ClInclude Include="..\..\include\libServer\SystemTool.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BandwidthMgr.cpp" />
+    <ClCompile Include="src\Profiling.cpp" />
+    <ClCompile Include="src\SystemTool.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

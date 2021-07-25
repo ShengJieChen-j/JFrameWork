@@ -48,6 +48,21 @@
     <ClInclude Include="..\..\include\libBase\SyncObjs.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libBase\noncopyable.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\Console.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\SingletonTemplate.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\PoolBase.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\ScopeExit.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -69,6 +84,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Thread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Console.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

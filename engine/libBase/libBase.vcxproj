@@ -34,7 +34,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -139,11 +139,16 @@
   <ItemGroup>
     <ClInclude Include="..\..\include\libBase\Base.h" />
     <ClInclude Include="..\..\include\libBase\basecrt.h" />
+    <ClInclude Include="..\..\include\libBase\Console.h" />
     <ClInclude Include="..\..\include\libBase\ExceptionHandler.h" />
     <ClInclude Include="..\..\include\libBase\IStream.h" />
     <ClInclude Include="..\..\include\libBase\logger.h" />
+    <ClInclude Include="..\..\include\libBase\noncopyable.h" />
     <ClInclude Include="..\..\include\libBase\OStream.h" />
+    <ClInclude Include="..\..\include\libBase\PoolBase.h" />
+    <ClInclude Include="..\..\include\libBase\ScopeExit.h" />
     <ClInclude Include="..\..\include\libBase\SimpleAllocator.h" />
+    <ClInclude Include="..\..\include\libBase\SingletonTemplate.h" />
     <ClInclude Include="..\..\include\libBase\SyncObjs.h" />
     <ClInclude Include="..\..\include\libBase\Thread.h" />
     <ClInclude Include="..\..\include\libBase\Timer.h" />
@@ -153,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\basecrt.cpp" />
+    <ClCompile Include="src\Console.cpp" />
     <ClCompile Include="src\ExceptionHandler.cpp" />
     <ClCompile Include="src\logger.cpp" />
     <ClCompile Include="src\Thread.cpp" />

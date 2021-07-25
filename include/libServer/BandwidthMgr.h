@@ -10,7 +10,7 @@
 ******************************************************************/
 #pragma once
 
-#include <hash_map>
+#include <unordered_map>
 #include "libBase/TypeDefine.h"
 
 namespace server
@@ -35,6 +35,6 @@ namespace server
 		void output();
 
 	private:
-		std::hash_map<uint16_t, SNetData>  m_map_Bandwidth;
+		std::unordered_map<uint16_t, SNetData>  m_map_Bandwidth;
 	};
 }
