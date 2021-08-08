@@ -66,6 +66,15 @@
     <ClInclude Include="..\..\include\libBase\StringUtil.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libBase\MD5.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\StringTools.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libBase\KeyCreater.h">
+      <Filter>inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -96,6 +105,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\StringUtil.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MD5.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

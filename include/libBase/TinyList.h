@@ -49,7 +49,6 @@ namespace base
 	template<class T>
 	STinyListNode<T>::STinyListNode()
 	{
-		std::cout << "This is STinyListNode" << std::endl;
 		this->m_Val = T();
 		this->m_pNext = NULL;
 		this->m_pPre = NULL;
@@ -58,7 +57,6 @@ namespace base
 	template<class T>
 	STinyListNode<T>::~STinyListNode()
 	{
-		std::cout << "This is ~STinyListNode" << std::endl;
 		this->remove();
 	};
 
@@ -83,7 +81,6 @@ namespace base
 	template <class NodeType>
 	CTinyList<NodeType>::CTinyList()
 	{
-		std::cout << "this is CTinyList" << std::endl;
 		this->m_Head.m_pPre = nullptr;
 		this->m_Head.m_pNext = &this->m_Tail;
 		this->m_Tail.m_pPre = &this->m_Head;
@@ -99,7 +96,6 @@ namespace base
 	template <class NodeType>
 	bool CTinyList<NodeType>::pushBack(NodeType* pNode)
 	{
-		std::cout << "this is pushBack" << std::endl;
 		if (!pNode)
 		{
 			return false;
@@ -120,7 +116,6 @@ namespace base
 	template <class NodeType>
 	NodeType* CTinyList<NodeType>::getBack()
 	{
-		std::cout << "this is getBack" << std::endl;
 		if (this->isEmpty())
 		{
 			return nullptr;
@@ -131,7 +126,6 @@ namespace base
 	template <class NodeType>
 	bool CTinyList<NodeType>::pushFront(NodeType* pNode)
 	{
-		std::cout << "this is pushBack" << std::endl;
 
 		if (!pNode)
 		{
@@ -154,7 +148,6 @@ namespace base
 	template <class NodeType>
 	NodeType* CTinyList<NodeType>::getFront()
 	{
-		std::cout << "this is getBack" << std::endl;
 		if (this->isEmpty())
 		{
 			return nullptr;

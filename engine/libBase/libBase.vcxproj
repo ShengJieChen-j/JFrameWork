@@ -142,13 +142,16 @@
     <ClInclude Include="..\..\include\libBase\Console.h" />
     <ClInclude Include="..\..\include\libBase\ExceptionHandler.h" />
     <ClInclude Include="..\..\include\libBase\IStream.h" />
+    <ClInclude Include="..\..\include\libBase\KeyCreater.h" />
     <ClInclude Include="..\..\include\libBase\logger.h" />
+    <ClInclude Include="..\..\include\libBase\MD5.h" />
     <ClInclude Include="..\..\include\libBase\noncopyable.h" />
     <ClInclude Include="..\..\include\libBase\OStream.h" />
     <ClInclude Include="..\..\include\libBase\PoolBase.h" />
     <ClInclude Include="..\..\include\libBase\ScopeExit.h" />
     <ClInclude Include="..\..\include\libBase\SimpleAllocator.h" />
     <ClInclude Include="..\..\include\libBase\SingletonTemplate.h" />
+    <ClInclude Include="..\..\include\libBase\StringTools.h" />
     <ClInclude Include="..\..\include\libBase\StringUtil.h" />
     <ClInclude Include="..\..\include\libBase\SyncObjs.h" />
     <ClInclude Include="..\..\include\libBase\Thread.h" />
@@ -163,6 +166,7 @@
     <ClCompile Include="src\Console.cpp" />
     <ClCompile Include="src\ExceptionHandler.cpp" />
     <ClCompile Include="src\logger.cpp" />
+    <ClCompile Include="src\MD5.cpp" />
     <ClCompile Include="src\StringUtil.cpp" />
     <ClCompile Include="src\Thread.cpp" />
     <ClCompile Include="src\Timer.cpp" />

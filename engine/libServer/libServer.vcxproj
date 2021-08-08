@@ -129,11 +129,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\libServer\AsioNetManager.h" />
     <ClInclude Include="..\..\include\libServer\BandwidthMgr.h" />
+    <ClInclude Include="..\..\include\libServer\CommandService.h" />
+    <ClInclude Include="..\..\include\libServer\DataBaseMgr.h" />
+    <ClInclude Include="..\..\include\libServer\DataBaseMgrNew.h" />
+    <ClInclude Include="..\..\include\libServer\IDB.h" />
+    <ClInclude Include="..\..\include\libServer\IDBService.h" />
+    <ClInclude Include="..\..\include\libServer\IDBServiceNew.h" />
+    <ClInclude Include="..\..\include\libServer\IMessageSend.h" />
     <ClInclude Include="..\..\include\libServer\IMsg.h" />
+    <ClInclude Include="..\..\include\libServer\INetManager.h" />
     <ClInclude Include="..\..\include\libServer\IObserver.h" />
+    <ClInclude Include="..\..\include\libServer\IServerConfig.h" />
     <ClInclude Include="..\..\include\libServer\ISubject.h" />
+    <ClInclude Include="..\..\include\libServer\LogMacro.h" />
+    <ClInclude Include="..\..\include\libServer\MessageMapManager.h" />
+    <ClInclude Include="..\..\include\libServer\MessageSend.h" />
+    <ClInclude Include="..\..\include\libServer\MessageService.h" />
+    <ClInclude Include="..\..\include\libServer\MessageSubject.h" />
+    <ClInclude Include="..\..\include\libServer\MsgAdapter.h" />
+    <ClInclude Include="..\..\include\libServer\MsgInterface.h" />
+    <ClInclude Include="..\..\include\libServer\NetEvent.h" />
+    <ClInclude Include="..\..\include\libServer\NetPublicData.h" />
+    <ClInclude Include="..\..\include\libServer\Observer.h" />
     <ClInclude Include="..\..\include\libServer\Profiling.h" />
+    <ClInclude Include="..\..\include\libServer\ServerConfig.h" />
+    <ClInclude Include="..\..\include\libServer\ServerData.h" />
+    <ClInclude Include="..\..\include\libServer\ServerFramework.h" />
+    <ClInclude Include="..\..\include\libServer\ServerLink.h" />
+    <ClInclude Include="..\..\include\libServer\ServerNetEvent.h" />
+    <ClInclude Include="..\..\include\libServer\ServerType.h" />
+    <ClInclude Include="..\..\include\libServer\Subject.h" />
     <ClInclude Include="..\..\include\libServer\SystemTool.h" />
     <ClInclude Include="..\..\include\libServer\Ticker.h" />
     <ClInclude Include="..\..\include\libServer\TickerMgr.h" />
@@ -141,11 +168,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\include\libServer\Ticker.cpp" />
-    <ClCompile Include="..\..\include\libServer\TickerMgr.cpp" />
     <ClCompile Include="src\BandwidthMgr.cpp" />
     <ClCompile Include="src\Profiling.cpp" />
+    <ClCompile Include="src\ServerFramework.cpp" />
+    <ClCompile Include="src\ServerNetEvent.cpp" />
     <ClCompile Include="src\SystemTool.cpp" />
+    <ClCompile Include="src\Ticker.cpp" />
     <ClCompile Include="src\TickerMgr.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

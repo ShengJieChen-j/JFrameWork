@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <logger.h>
+#include "logger.h"
 
 #if defined WIN32
     #pragma warning(disable:4996)

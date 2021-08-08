@@ -13,6 +13,12 @@
     <Filter Include="inc\db">
       <UniqueIdentifier>{b7ff17fe-4e52-4e23-b869-9e1b52437982}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{d752eb0a-bedb-4bfb-93cd-3cd9df79004f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db">
+      <UniqueIdentifier>{6c06dd97-fd76-490b-9115-a38381904373}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\libServer\BandwidthMgr.h">
@@ -45,6 +51,87 @@
     <ClInclude Include="..\..\include\libServer\TickerMgr.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerFramework.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerData.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerType.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerNetEvent.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\NetEvent.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MessageSubject.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\Subject.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\Observer.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MessageService.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MessageMapManager.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MsgAdapter.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MsgInterface.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\LogMacro.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IServerConfig.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerConfig.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\MessageSend.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IMessageSend.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\ServerLink.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\CommandService.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\AsioNetManager.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\INetManager.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\NetPublicData.h">
+      <Filter>inc\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\DataBaseMgr.h">
+      <Filter>inc\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IDBServiceNew.h">
+      <Filter>inc\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IDB.h">
+      <Filter>inc\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\IDBService.h">
+      <Filter>inc\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\libServer\DataBaseMgrNew.h">
+      <Filter>inc\db</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BandwidthMgr.cpp">
@@ -59,11 +146,16 @@
     <ClCompile Include="src\Profiling.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\include\libServer\Ticker.cpp">
+    <ClCompile Include="src\TickerMgr.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\include\libServer\TickerMgr.cpp" />
-    <ClCompile Include="src\TickerMgr.cpp">
+    <ClCompile Include="src\ServerFramework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServerNetEvent.cpp">
+      <Filter>src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ticker.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
