@@ -11,7 +11,6 @@
 #pragma once
 #include "Thread.h"
 #include "Base.h"
-
 #include "noncopyable.h"
 
 namespace base
@@ -54,7 +53,7 @@ namespace base
 		~CConsole();
 
 	private:
-		SConsoleInfo* m_pConsoleInfo;
+		SConsoleInfo*		m_pConsoleInfo;
 		char				m_szKeyBuffer[256];
 		uint32_t			m_nKeyCount;
 	};

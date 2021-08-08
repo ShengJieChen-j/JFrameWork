@@ -75,11 +75,17 @@
     <ExcludePath>$(ExcludePath);$(SystemRoot)</ExcludePath>
     <TargetName>libserver-md-gd</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../lib/x64/debug/</OutDir>
+    <IntDir>../../temp/$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>libserver-md-gd</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>../../include;../../thirdparty/boost/include/boost;../../thirdparty/boost/include/;./;../../include/libServer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
